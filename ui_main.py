@@ -65,7 +65,7 @@ class Ui_MainWindow(object):
         font1.setPointSize(20)
         font1.setBold(True)
         self.lbl_current_balance.setFont(font1)
-        self.lbl_current_balance.setStyleSheet(u"color: white;\n"
+        self.lbl_current_balance.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 20pt;\n"
 "background-color: none;\n"
@@ -82,7 +82,7 @@ class Ui_MainWindow(object):
         font2.setItalic(False)
         font2.setKerning(True)
         self.current_balance.setFont(font2)
-        self.current_balance.setStyleSheet(u"color: white;\n"
+        self.current_balance.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 30pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -113,7 +113,7 @@ class Ui_MainWindow(object):
         self.lbl_income = QLabel(self.balances_frame)
         self.lbl_income.setObjectName(u"lbl_income")
         self.lbl_income.setFont(font3)
-        self.lbl_income.setStyleSheet(u"color: white;\n"
+        self.lbl_income.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
@@ -134,7 +134,7 @@ class Ui_MainWindow(object):
         font4.setItalic(False)
         font4.setKerning(True)
         self.income_balance.setFont(font4)
-        self.income_balance.setStyleSheet(u"color: white;\n"
+        self.income_balance.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 20pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -161,7 +161,7 @@ class Ui_MainWindow(object):
         self.lbl_outcome = QLabel(self.balances_frame)
         self.lbl_outcome.setObjectName(u"lbl_outcome")
         self.lbl_outcome.setFont(font3)
-        self.lbl_outcome.setStyleSheet(u"color: white;\n"
+        self.lbl_outcome.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
@@ -176,7 +176,7 @@ class Ui_MainWindow(object):
         self.outcome_balance = QLabel(self.balances_frame)
         self.outcome_balance.setObjectName(u"outcome_balance")
         self.outcome_balance.setFont(font4)
-        self.outcome_balance.setStyleSheet(u"color: white;\n"
+        self.outcome_balance.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 20pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -201,7 +201,7 @@ class Ui_MainWindow(object):
         self.lbl_expenses_categories = QLabel(self.balances_frame_2)
         self.lbl_expenses_categories.setObjectName(u"lbl_expenses_categories")
         self.lbl_expenses_categories.setFont(font1)
-        self.lbl_expenses_categories.setStyleSheet(u"color: white;\n"
+        self.lbl_expenses_categories.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 20pt;\n"
 "background-color: none;\n"
@@ -236,7 +236,7 @@ class Ui_MainWindow(object):
         self.lbl_groceries = QLabel(self.balances_frame_2)
         self.lbl_groceries.setObjectName(u"lbl_groceries")
         self.lbl_groceries.setFont(font5)
-        self.lbl_groceries.setStyleSheet(u"color: white;\n"
+        self.lbl_groceries.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 14pt;\n"
 "background-color: none;\n"
@@ -253,7 +253,7 @@ class Ui_MainWindow(object):
         font6.setItalic(False)
         font6.setKerning(True)
         self.total_groceries.setFont(font6)
-        self.total_groceries.setStyleSheet(u"color: white;\n"
+        self.total_groceries.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -282,7 +282,7 @@ class Ui_MainWindow(object):
         self.lbl_entertainment = QLabel(self.balances_frame_2)
         self.lbl_entertainment.setObjectName(u"lbl_entertainment")
         self.lbl_entertainment.setFont(font5)
-        self.lbl_entertainment.setStyleSheet(u"color: white;\n"
+        self.lbl_entertainment.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 14pt;\n"
 "background-color: none;\n"
@@ -293,7 +293,7 @@ class Ui_MainWindow(object):
         self.total_entertainment = QLabel(self.balances_frame_2)
         self.total_entertainment.setObjectName(u"total_entertainment")
         self.total_entertainment.setFont(font6)
-        self.total_entertainment.setStyleSheet(u"color: white;\n"
+        self.total_entertainment.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -322,7 +322,7 @@ class Ui_MainWindow(object):
         self.lbl_auto = QLabel(self.balances_frame_2)
         self.lbl_auto.setObjectName(u"lbl_auto")
         self.lbl_auto.setFont(font5)
-        self.lbl_auto.setStyleSheet(u"color: white;\n"
+        self.lbl_auto.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 14pt;\n"
 "background-color: none;\n"
@@ -333,7 +333,7 @@ class Ui_MainWindow(object):
         self.total_auto = QLabel(self.balances_frame_2)
         self.total_auto.setObjectName(u"total_auto")
         self.total_auto.setFont(font6)
-        self.total_auto.setStyleSheet(u"color: white;\n"
+        self.total_auto.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -362,7 +362,7 @@ class Ui_MainWindow(object):
         self.lbl_other = QLabel(self.balances_frame_2)
         self.lbl_other.setObjectName(u"lbl_other")
         self.lbl_other.setFont(font5)
-        self.lbl_other.setStyleSheet(u"color: white;\n"
+        self.lbl_other.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 14pt;\n"
 "background-color: none;\n"
@@ -373,7 +373,7 @@ class Ui_MainWindow(object):
         self.total_other = QLabel(self.balances_frame_2)
         self.total_other.setObjectName(u"total_other")
         self.total_other.setFont(font6)
-        self.total_other.setStyleSheet(u"color: white;\n"
+        self.total_other.setStyleSheet(u"color: #004d4d;\n"
 "font-size: 16pt;\n"
 "background-color: none;\n"
 "border: none;")
@@ -405,7 +405,7 @@ class Ui_MainWindow(object):
         font7.setBold(True)
         self.btn_new_transaction.setFont(font7)
         self.btn_new_transaction.setStyleSheet(u"QPushButton{\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: #004d4d;\n"
 "     background-color:rgba(255,255,255,30);\n"
 "     border: 1px solid rgba(255,255,255,40);\n"
 "     border-radius:7px;\n"
@@ -430,7 +430,7 @@ class Ui_MainWindow(object):
         self.btn_delete_transaction.setMinimumSize(QSize(230, 50))
         self.btn_delete_transaction.setFont(font7)
         self.btn_delete_transaction.setStyleSheet(u"QPushButton{\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: #004d4d;\n"
 "     background-color:rgba(255,255,255,30);\n"
 "     border: 1px solid rgba(255,255,255,40);\n"
 "     border-radius:7px;\n"
@@ -455,7 +455,7 @@ class Ui_MainWindow(object):
         self.btn_edit_transaction.setMinimumSize(QSize(230, 50))
         self.btn_edit_transaction.setFont(font7)
         self.btn_edit_transaction.setStyleSheet(u"QPushButton{\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: #004d4d;\n"
 "     background-color:rgba(255,255,255,30);\n"
 "     border: 1px solid rgba(255,255,255,40);\n"
 "     border-radius:7px;\n"
@@ -485,7 +485,7 @@ class Ui_MainWindow(object):
 "border: 1px solid rgba(255,255,255,40);\n"
 "border-bottom-right-radius: 7px; \n"
 "border-bottom-left-radius: 7px; \n"
-"color: white;\n"
+"color: #004d4d;\n"
 "}\n"
 "\n"
 "QHeaderView::section {\n"

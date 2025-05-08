@@ -66,7 +66,7 @@ border-radius: 7px;</string>
          </font>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: white;
+         <string notr="true">color: #004d4d;
 font-weight: bold;
 font-size: 20pt;
 background-color: none;
@@ -85,7 +85,7 @@ border: none;</string>
         <property name="styleSheet">
          <string notr="true">QComboBox {
 font-size: 16pt;
-color: white;
+color: #004d4d;
 }
 
 QComboBox:item {
@@ -129,7 +129,7 @@ QComboBox:item {
        <widget class="QDateEdit" name="dateEdit">
         <property name="styleSheet">
          <string notr="true">font-size: 16pt;
-color: white;
+color: #004d4d;
 padding-left: 10px;</string>
         </property>
         <property name="alignment">
@@ -154,7 +154,7 @@ padding-left: 10px;</string>
        <widget class="QLineEdit" name="le_description">
         <property name="styleSheet">
          <string notr="true">font-size: 16pt;
-color: white;
+color: #004d4d;
 padding-left: 10px;</string>
         </property>
         <property name="alignment">
@@ -169,7 +169,7 @@ padding-left: 10px;</string>
        <widget class="QLineEdit" name="le_balance">
         <property name="styleSheet">
          <string notr="true">font-size: 16pt;
-color: white;
+color: #004d4d;
 padding-left: 10px;</string>
         </property>
         <property name="alignment">
@@ -185,7 +185,7 @@ padding-left: 10px;</string>
         <property name="styleSheet">
          <string notr="true">QComboBox {
 font-size: 16pt;
-color: white;
+color: #004d4d;
 }
 
 QComboBox:item {
@@ -224,7 +224,7 @@ QComboBox:item {
         </property>
         <property name="styleSheet">
          <string notr="true">QPushButton{
-	color: rgb(255, 255, 255);
+	color: #004d4d;
      background-color:rgba(255,255,255,30);
      border: 1px solid rgba(255,255,255,40);
      border-radius:7px;

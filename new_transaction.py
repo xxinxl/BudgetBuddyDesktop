@@ -56,7 +56,7 @@ class Ui_Dialog(object):
         font.setPointSize(20)
         font.setBold(True)
         self.lbl_new_transaction.setFont(font)
-        self.lbl_new_transaction.setStyleSheet(u"color: white;\n"
+        self.lbl_new_transaction.setStyleSheet(u"color: #004d4d;\n"
 "font-weight: bold;\n"
 "font-size: 20pt;\n"
 "background-color: none;\n"
@@ -74,7 +74,7 @@ class Ui_Dialog(object):
         self.cb_choose_category.setObjectName(u"cb_choose_category")
         self.cb_choose_category.setStyleSheet(u"QComboBox {\n"
 "font-size: 16pt;\n"
-"color: white;\n"
+"color: #004d4d;\n"
 "}\n"
 "\n"
 "QComboBox:item {\n"
@@ -86,7 +86,7 @@ class Ui_Dialog(object):
         self.dateEdit = QDateEdit(self.new_transaction)
         self.dateEdit.setObjectName(u"dateEdit")
         self.dateEdit.setStyleSheet(u"font-size: 16pt;\n"
-"color: white;\n"
+"color: #004d4d;\n"
 "padding-left: 10px;")
         self.dateEdit.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
         self.dateEdit.setButtonSymbols(QAbstractSpinBox.NoButtons)
@@ -97,7 +97,7 @@ class Ui_Dialog(object):
         self.le_description = QLineEdit(self.new_transaction)
         self.le_description.setObjectName(u"le_description")
         self.le_description.setStyleSheet(u"font-size: 16pt;\n"
-"color: white;\n"
+"color: #004d4d;\n"
 "padding-left: 10px;")
         self.le_description.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -106,7 +106,7 @@ class Ui_Dialog(object):
         self.le_balance = QLineEdit(self.new_transaction)
         self.le_balance.setObjectName(u"le_balance")
         self.le_balance.setStyleSheet(u"font-size: 16pt;\n"
-"color: white;\n"
+"color: #004d4d;\n"
 "padding-left: 10px;")
         self.le_balance.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
 
@@ -118,7 +118,7 @@ class Ui_Dialog(object):
         self.cb_status.setObjectName(u"cb_status")
         self.cb_status.setStyleSheet(u"QComboBox {\n"
 "font-size: 16pt;\n"
-"color: white;\n"
+"color: #004d4d;\n"
 "}\n"
 "\n"
 "QComboBox:item {\n"
@@ -135,7 +135,7 @@ class Ui_Dialog(object):
         font1.setBold(True)
         self.btn_new_transaction.setFont(font1)
         self.btn_new_transaction.setStyleSheet(u"QPushButton{\n"
-"	color: rgb(255, 255, 255);\n"
+"	color: #004d4d;\n"
 "     background-color:rgba(255,255,255,30);\n"
 "     border: 1px solid rgba(255,255,255,40);\n"
 "     border-radius:7px;\n"
