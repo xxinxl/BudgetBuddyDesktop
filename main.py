@@ -61,7 +61,12 @@ class BudgetBuddy(QMainWindow):
         self.new_window.close()
 
     def edit_current_transaction(self):
-        index = self.ui.tableView.selectedIndexes()[0]
+        indexes = self.ui.tableView.selectedIndexes()
+        if not indexes:
+            QtWidgets.QMessageBox.warning(self, "Warning", "Please select a transaction to edit.")
+            return
+
+        index = indexes[0]
         id = str(self.ui.tableView.model().data(index))
 
         date = self.ui_window.dateEdit.text()
@@ -76,7 +81,12 @@ class BudgetBuddy(QMainWindow):
         self.new_window.close()
 
     def delete_current_transaction(self):
-        index = self.ui.tableView.selectedIndexes()[0]
+        indexes = self.ui.tableView.selectedIndexes()
+        if not indexes:
+            QtWidgets.QMessageBox.warning(self, "Warning", "Please select a transaction to delete.")
+            return
+
+        index = indexes[0]
         id = str(self.ui.tableView.model().data(index))
 
         self.conn.delete_transaction_query(id)

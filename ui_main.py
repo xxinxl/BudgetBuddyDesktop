@@ -38,7 +38,7 @@ class Ui_MainWindow(object):
 "    stop:0.5 rgba(102, 217, 192, 235),\n"
 "    stop:1 rgba(38, 166, 154, 255)\n"
 ");\n"
-"font-color: #004d4d;\n"
+"color: #004d4d;\n"
 "\n"
 "")
         self.centralwidget = QWidget(MainWindow)

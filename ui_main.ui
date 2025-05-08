@@ -34,7 +34,7 @@ background-color: qlineargradient(
     stop:0.5 rgba(102, 217, 192, 235),
     stop:1 rgba(38, 166, 154, 255)
 );
-font-color: #004d4d;
+color: #004d4d;
 
 </string>
   </property>
