@@ -15,13 +15,21 @@
   </property>
   <property name="styleSheet">
    <string notr="true">font-family: Noto Sans SC;
-background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255));</string>
+background-color: qlineargradient(
+    spread:pad,
+    x1:1, y1:1,
+    x2:0, y2:0,
+    stop:0 rgba(178, 255, 218, 255),
+    stop:0.5 rgba(102, 217, 192, 235),
+    stop:1 rgba(38, 166, 154, 255)
+);
+</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QFrame" name="new_transaction">
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 30); 
+      <string notr="true">background-color: rgba(255, 255, 255, 30);
 border: 1px solid rgba(255,255,255,40);
 border-radius: 7px;</string>
      </property>
@@ -33,7 +41,7 @@ border-radius: 7px;</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_21">
       <property name="spacing">
-       <number>-1</number>
+       <number>6</number>
       </property>
       <property name="leftMargin">
        <number>12</number>
@@ -53,6 +61,7 @@ border-radius: 7px;</string>
          <font>
           <family>Noto Sans SC</family>
           <pointsize>20</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -131,16 +140,13 @@ padding-left: 10px;</string>
         </property>
         <property name="dateTime">
          <datetime>
-          <hour>22</hour>
+          <hour>0</hour>
           <minute>0</minute>
           <second>0</second>
-          <year>2022</year>
-          <month>12</month>
-          <day>31</day>
+          <year>2025</year>
+          <month>1</month>
+          <day>1</day>
          </datetime>
-        </property>
-        <property name="currentSectionIndex">
-         <number>0</number>
         </property>
        </widget>
       </item>
@@ -212,6 +218,7 @@ QComboBox:item {
         <property name="font">
          <font>
           <family>Noto Sans SC</family>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>

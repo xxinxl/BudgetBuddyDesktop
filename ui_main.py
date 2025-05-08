@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'ui_main.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.4.2
+## Created by: Qt User Interface Compiler version 6.9.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -30,7 +30,15 @@ class Ui_MainWindow(object):
         font.setFamilies([u"Noto Sans SC"])
         MainWindow.setFont(font)
         MainWindow.setStyleSheet(u"font-family: Noto Sans SC;\n"
-"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(81, 0, 135, 255), stop:0.427447 rgba(41, 61, 132, 235), stop:1 rgba(155, 79, 165, 255));\n"
+"background-color: qlineargradient(\n"
+"    spread:pad,\n"
+"    x1:1, y1:1,\n"
+"    x2:0, y2:0,\n"
+"    stop:0 rgba(178, 255, 218, 255),\n"
+"    stop:0.5 rgba(102, 217, 192, 235),\n"
+"    stop:1 rgba(38, 166, 154, 255)\n"
+");\n"
+"\n"
 "")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -40,7 +48,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.balances_frame = QFrame(self.centralwidget)
         self.balances_frame.setObjectName(u"balances_frame")
-        self.balances_frame.setStyleSheet(u"background-color: rgba(255, 255, 255, 30); \n"
+        self.balances_frame.setStyleSheet(u"background-color: rgba(255, 255, 255, 30);\n"
 "border: 1px solid rgba(255,255,255,40);\n"
 "border-radius: 7px;")
         self.balances_frame.setFrameShape(QFrame.NoFrame)
@@ -204,7 +212,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.icon_groceries = QLabel(self.balances_frame_2)
         self.icon_groceries.setObjectName(u"icon_groceries")
-        sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Preferred, QSizePolicy.Policy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.icon_groceries.sizePolicy().hasHeightForWidth())
@@ -385,9 +393,7 @@ class Ui_MainWindow(object):
         self.btn_frame.setObjectName(u"btn_frame")
         self.btn_frame.setStyleSheet(u"background-color: transparent;")
         self.horizontalLayout = QHBoxLayout(self.btn_frame)
-#ifndef Q_OS_MAC
-        self.horizontalLayout.setSpacing(-1)
-#endif
+        self.horizontalLayout.setSpacing(6)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.btn_new_transaction = QPushButton(self.btn_frame)
@@ -412,7 +418,7 @@ class Ui_MainWindow(object):
 "background-color:rgba(255,255,255,70);\n"
 "}")
         icon = QIcon()
-        icon.addFile(u":/icons/icons/post_add_white_24dp.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/icons/post_add_white_24dp.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_new_transaction.setIcon(icon)
         self.btn_new_transaction.setIconSize(QSize(24, 24))
 
@@ -437,7 +443,7 @@ class Ui_MainWindow(object):
 "background-color:rgba(255,255,255,70);\n"
 "}")
         icon1 = QIcon()
-        icon1.addFile(u":/icons/icons/delete_white_24dp.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon1.addFile(u":/icons/icons/delete_white_24dp.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_delete_transaction.setIcon(icon1)
         self.btn_delete_transaction.setIconSize(QSize(24, 24))
 
@@ -462,7 +468,7 @@ class Ui_MainWindow(object):
 "background-color:rgba(255,255,255,70);\n"
 "}")
         icon2 = QIcon()
-        icon2.addFile(u":/icons/icons/edit_white_24dp.svg", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icons/icons/edit_white_24dp.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_edit_transaction.setIcon(icon2)
         self.btn_edit_transaction.setIconSize(QSize(24, 24))
 
@@ -492,6 +498,8 @@ class Ui_MainWindow(object):
 "QTableView::item {\n"
 "    border-style: none;\n"
 "    border-bottom: 1px solid rgba(255,255,255,50);\n"
+"    padding-left: auto;\n"
+"    padding-right: auto;\n"
 "}\n"
 "\n"
 "QTableView::item:selected{\n"
@@ -505,7 +513,7 @@ class Ui_MainWindow(object):
         self.tableView.setTextElideMode(Qt.ElideRight)
         self.tableView.setShowGrid(False)
         self.tableView.setSortingEnabled(True)
-        self.tableView.horizontalHeader().setDefaultSectionSize(135)
+        self.tableView.horizontalHeader().setDefaultSectionSize(155)
         self.tableView.verticalHeader().setVisible(False)
 
         self.verticalLayout_2.addWidget(self.tableView)
