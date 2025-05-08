@@ -22,7 +22,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>BudgetBuddy</string>
   </property>
   <property name="styleSheet">
    <string notr="true">font-family: Noto Sans SC;

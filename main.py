@@ -9,9 +9,9 @@ from new_transaction import Ui_Dialog
 from connection import Data
 
 
-class ExpenseTracker(QMainWindow):
+class BudgetBuddy(QMainWindow):
     def __init__(self):
-        super(ExpenseTracker, self).__init__()
+        super(BudgetBuddy, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.conn = Data()
@@ -86,7 +86,7 @@ class ExpenseTracker(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = ExpenseTracker()
+    window = BudgetBuddy()
     window.show()
 
     sys.exit(app.exec())

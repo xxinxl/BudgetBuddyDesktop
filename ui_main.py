@@ -38,6 +38,7 @@ class Ui_MainWindow(object):
 "    stop:0.5 rgba(102, 217, 192, 235),\n"
 "    stop:1 rgba(38, 166, 154, 255)\n"
 ");\n"
+"font-color: #004d4d;\n"
 "\n"
 "")
         self.centralwidget = QWidget(MainWindow)
@@ -526,7 +527,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"BudgetBuddy", None))
         self.lbl_current_balance.setText(QCoreApplication.translate("MainWindow", u"Current Balance", None))
         self.current_balance.setText(QCoreApplication.translate("MainWindow", u"$3235,50", None))
         self.lbl_arrow_top.setText("")
