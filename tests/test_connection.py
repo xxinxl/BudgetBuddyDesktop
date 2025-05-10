@@ -1,70 +1,72 @@
 import unittest
-from PyQt5.QtSql import QSqlDatabase, QSqlQuery
-from PyQt5.QtCore import QCoreApplication
+from PySide6.QtSql import QSqlDatabase, QSqlQuery
+from PySide6.QtWidgets import QApplication
 
 
 class TestData(unittest.TestCase):
-    def setUp(self):
+    @classmethod
+    def setUpClass(cls):
+        cls.app = QApplication([])  # Инициализация QApplication
 
-        self.app = QCoreApplication([])
+    @classmethod
+    def tearDownClass(cls):
+        cls.app.quit()  # Завершение приложения
+
+    def setUp(self):
         self.db = QSqlDatabase.addDatabase("QSQLITE")
         self.db.setDatabaseName(":memory:")
         self.db.open()
 
         query = QSqlQuery()
-        query.exec_(
+        query.exec(
             "CREATE TABLE transactions (id INTEGER PRIMARY KEY, Description TEXT)"
         )
 
     def tearDown(self):
-
         self.db.close()
         QSqlDatabase.removeDatabase("QSQLITE")
-        del self.app
 
     def test_add_new_transaction(self):
         query = QSqlQuery()
         query.prepare("INSERT INTO transactions (Description) VALUES ('Test')")
-        query.exec_()
+        query.exec()  # Заменено на exec()
 
         query.prepare("SELECT Description FROM transactions WHERE Description = 'Test'")
-        query.exec_()
+        query.exec()  # Заменено на exec()
         query.next()
-        self.assertEqual(query.value("Description"), "Test")
+        self.assertEqual(query.value(0), "Test")  # Получаем значение по индексу
 
     def test_delete_transaction(self):
-
         query = QSqlQuery()
         query.prepare("INSERT INTO transactions (Description) VALUES ('Test')")
-        query.exec_()
+        query.exec()  # Заменено на exec()
 
         query.prepare("DELETE FROM transactions WHERE Description = 'Test'")
-        query.exec_()
+        query.exec()  # Заменено на exec()
 
         query.prepare("SELECT Description FROM transactions WHERE Description = 'Test'")
-        query.exec_()
-        self.assertFalse(query.next())
+        query.exec()  # Заменено на exec()
+        self.assertFalse(query.next())  # Проверка, что запись удалена
 
     def test_total_methods(self):
-
-        pass
+        pass  # Здесь можно добавить тесты по вашему усмотрению
 
     def test_update_transaction(self):
         query = QSqlQuery()
         query.prepare("INSERT INTO transactions (Description) VALUES ('Test')")
-        query.exec_()
+        query.exec()  # Заменено на exec()
 
         query.prepare(
             "UPDATE transactions SET Description = 'Updated' WHERE Description = 'Test'"
         )
-        query.exec_()
+        query.exec()  # Заменено на exec()
 
         query.prepare(
             "SELECT Description FROM transactions WHERE Description = 'Updated'"
         )
-        query.exec_()
+        query.exec()  # Заменено на exec()
         query.next()
-        self.assertEqual(query.value("Description"), "Updated")
+        self.assertEqual(query.value(0), "Updated")  # Получаем значение по индексу
 
 
 if __name__ == "__main__":

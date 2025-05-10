@@ -1,0 +1,26 @@
+# Виртуальные окружения
+venv/
+.venv/
+env/
+.env/
+
+# Файлы Python
+__pycache__/
+*.py[cod]
+
+# Конфигурации IDE
+.idea/
+.vscode/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Конфиденциальные файлы
+*.env
+
+# Файлы сборки
+build/
+dist/
+*.egg-info/
+screenshot/
