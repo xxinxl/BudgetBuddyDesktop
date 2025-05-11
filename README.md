@@ -24,7 +24,7 @@
 ```
 git clone git@github.com:xxinxl/BudgetBuddyDesktop.git
 cd BudgetBuddyDesktop
-pip install -r requirements.txt
+make install
 ```
 
 ### 📋 Требования
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ## 🚀 Запуск
 
 ```
-python3 main.py
+make run
 ```
 
 При первом запуске автоматически создается:
@@ -53,13 +53,13 @@ python3 main.py
 | `amount`     | REAL        | Сумма (положительная для доходов) |
 | `description`| TEXT        | Детали операции                   |
 | `balance`    | REAL        | Текущий баланс                    |
-| `status`       | TEXT        | 'income'/'outcome'           |
+| `status`     | TEXT        | 'income'/'outcome'                |
 
 
 ## 🧪 Тестирование
 
 ```
-python3 -m unittest discover tests -v
+make test
 ```
 ## 👥 Команда разработчиков
 
